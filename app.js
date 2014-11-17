@@ -20,7 +20,7 @@ module.exports = function(config) {
 };
 
 app.get('/', function(req, res) {
-   res.sendfile('./index.html');
+   res.sendfile('./test.html');
 });
 
 app.use(express.static('public'));
