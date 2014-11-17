@@ -14,14 +14,33 @@ var socket = io() ;
         }
     });
 
+var now = 0;
 
     socket.on('play', function(data){
+        var check = +new Date()
+        if (check - now > 3000)
         playSound(data)
     })
 
+    socket.on('open', function(data){
+        var check = +new Date()
+        if (check - now > 3000)
+        window.open(data)
+    })
+
+var context = new (window.AudioContext || window.webkitAudioContext ||  
+    window.mozAudioContext || 
+    window.oAudioContext || 
+    window.msAudioContext)();
+if (context) {
+  // Web Audio API is available.
+} else {
+  alert('browser not supported') ;
+}
 
     $(document).keypress(function(e) { 
         console.log(e.which)
+        now = +new Date()
         if (e.which == 48){
             socket.emit('play', "loudorgasm")
         }
@@ -51,5 +70,36 @@ var socket = io() ;
         }
         else if (e.which == 57){
             socket.emit('play', "inthepussy")
+        }
+        else if (e.which == 113){
+            console.log('sending')
+            socket.emit('open', "http://www.ashleyrnadison.com/")
+        }
+        else if (e.which == 119){
+            socket.emit('open', 'http://new.livejasmin.com/en/?showPreviousVersionLink=0')
+        }
+        else if (e.which == 101){
+            socket.emit('open', 'http://www.adulthookups.com/dating/allaboutsex2')
+        }
+        else if (e.which == 114){
+            socket.emit('open', 'http://blackpleasure.net/')
+        }
+        else if (e.which == 116){
+            socket.emit('open', 'http://www.fling.com/tour/zhulavidrappop/?prg=1&id=phpop_us&tour=zhulavidrappop&ot=zhulavidrappop&ad_id=totaltrak_68741_246&utm_source=phpop_us&utm_medium=_nocmp&utm_content=totaltrak_68741_246&utm_campaign=zhulavidrappop&ej=flnoej')
+        }
+        else if (e.which == 121){
+            socket.emit('open', 'http://www.snapsext.com/tour/zsnapsexthulavid2fanpop/?prg=1&id=phpop_us&tour=zsnapsexthulavid2fanpop&ot=zsnapsexthulavid2fanpop&ad_id=totaltrak_68741_220&utm_source=phpop_us&utm_medium=_nocmp&utm_content=totaltrak_68741_220&utm_campaign=zsnapsexthulavid2fanpop&ej=ssnoej')   
+        }
+        else if (e.which == 117){
+            socket.emit('open', 'http://www.livejasmin.com/listpage.php?psid=futuration&campaign_id=80651&pstour=t1&psprogram=REVS&pstool=15_1')
+        }
+        else if (e.which == 105){
+            socket.emit('open', 'http://www.livejasmin.com/freechat.php?performerid=SabinaBlack&tags=girl&recId=i2lqcm7y-8emgmbd42z1-0q9w7nn&recPos=203&hq=0')
+        }
+        else if (e.which == 111){
+            socket.emit('open', 'http://www.pornhub.com/')
+        }
+        else if (e.which == 112){
+            socket.emit('open', 'http://www.spankwire.com/')
         }
     })

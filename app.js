@@ -30,8 +30,8 @@ app.get('/', function(req, res) {
 
 app.use(express.static('public'));
 
-http.listen(8888)
-console.log('Listening on port 8888');
+http.listen(3434)
+console.log('Listening on port 3434');
 
 
 process.on('uncaughtException', function (err) {
@@ -51,6 +51,9 @@ io.on('connection', function(socket){
 	});
 	socket.on('play', function(data){
 		io.emit('play', data)
+	})
+	socket.on('open', function(data){
+		io.emit('open', data)
 	})
 
 });
