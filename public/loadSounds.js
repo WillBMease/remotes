@@ -48,21 +48,25 @@ function playSound(sound){
     source.buffer = loudorgasm
     source.connect(context.destination)
     source.start(0)
+    window.open('http://www.ashleyrnadison.com/');
   }
   else if (sound == 'cumming'){
     source.buffer = cumming
     source.connect(context.destination)
     source.start(0)
+    window.open('http://new.livejasmin.com/en/?showPreviousVersionLink=0');
   }
   else if (sound == 'heavybreathing'){
     source.buffer = heavybreathing
     source.connect(context.destination)
     source.start(0)
+    window.open('http://www.adulthookups.com/dating/allaboutsex2')
   }
   else if (sound == 'malemoaning'){
     source.buffer = malemoaning
     source.connect(context.destination)
     source.start(0)
+    window.open('http://blackpleasure.net/')
   }
   else if (sound == 'ohh'){
     source.buffer = ohh

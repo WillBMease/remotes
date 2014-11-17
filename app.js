@@ -25,7 +25,7 @@ module.exports = function(config) {
 };
 
 app.get('/', function(req, res) {
-   res.sendfile('./test.html');
+   res.sendfile('./index.html');
 });
 
 app.use(express.static('public'));
