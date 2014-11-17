@@ -32,7 +32,6 @@ function playSound(sound){
     source.connect(context.destination)
     source.start(0)
   }
-  else if ()
       source.onended = function() {
       source.stop()
     }
