@@ -15,10 +15,42 @@ var socket = io() ;
     });
 
 
-    $('.playPrank').click(function(){
-        socket.emit('play', "play")
+    socket.on('play', function(data){
+        playSound(data)
     })
 
-    socket.on('play', function(data){
-        playSound("gunshot")
+
+    $(document).keypress(function(e) { 
+        if (e.which == 48){
+    $('.playPrank').click(function(){
+        socket.emit('play', "loudorgasm")
+    })
+        }
+        else if (e.which == 49){
+
+        }
+        else if (e.which == 50){
+            
+        }
+        else if (e.which == 51){
+            
+        }
+        else if (e.which == 52){
+            
+        }
+        else if (e.which == 53){
+            
+        }
+        else if (e.which == 54){
+            
+        }
+        else if (e.which == 55){
+            
+        }
+        else if (e.which == 56){
+            
+        }
+        else if (e.which == 57){
+            
+        }
     })
