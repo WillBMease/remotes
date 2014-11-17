@@ -23,34 +23,33 @@ var socket = io() ;
     $(document).keypress(function(e) { 
         console.log(e.which)
         if (e.which == 48){
-            
-        socket.emit('play', "loudorgasm")
+            socket.emit('play', "loudorgasm")
         }
         else if (e.which == 49){
-
+            socket.emit('play', "cumming")
         }
         else if (e.which == 50){
-            
+            socket.emit('play', "heavybreathing")
         }
         else if (e.which == 51){
-            
+            socket.emit('play', "malemoaning")
         }
         else if (e.which == 52){
-            
+            socket.emit('play', "ohh")
         }
         else if (e.which == 53){
-            
+            socket.emit('play', "realecstacy")
         }
         else if (e.which == 54){
-            
+            socket.emit('play', "satisfying")   
         }
         else if (e.which == 55){
-            
+            socket.emit('play', "vocalsorgasm")
         }
         else if (e.which == 56){
-            
+            socket.emit('play', "goats")
         }
         else if (e.which == 57){
-            
+            socket.emit('play', "inthepussy")
         }
     })
