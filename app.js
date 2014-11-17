@@ -45,7 +45,7 @@ io.on('connection', function(socket){
 		console.log(userIDs) ;
 	});
 	socket.on('play', function(data){
-		io.emit('play', 'play')
+		io.emit('play', data)
 	})
 
 });

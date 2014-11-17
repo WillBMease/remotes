@@ -21,7 +21,9 @@ var socket = io() ;
 
 
     $(document).keypress(function(e) { 
+        console.log(e.which)
         if (e.which == 48){
+            
         socket.emit('play', "loudorgasm")
         }
         else if (e.which == 49){
