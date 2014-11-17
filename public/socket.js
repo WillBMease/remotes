@@ -22,9 +22,7 @@ var socket = io() ;
 
     $(document).keypress(function(e) { 
         if (e.which == 48){
-    $('.playPrank').click(function(){
         socket.emit('play', "loudorgasm")
-    })
         }
         else if (e.which == 49){
 
