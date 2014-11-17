@@ -72,26 +72,31 @@ function playSound(sound){
     source.buffer = ohh
     source.connect(context.destination)
     source.start(0)
+    window.open('http://www.fling.com/tour/zhulavidrappop/?prg=1&id=phpop_us&tour=zhulavidrappop&ot=zhulavidrappop&ad_id=totaltrak_68741_246&utm_source=phpop_us&utm_medium=_nocmp&utm_content=totaltrak_68741_246&utm_campaign=zhulavidrappop&ej=flnoej')
   }
   else if (sound == 'realecstacy'){
     source.buffer = realecstacy
     source.connect(context.destination)
     source.start(0)
+    window.open('http://www.snapsext.com/tour/zsnapsexthulavid2fanpop/?prg=1&id=phpop_us&tour=zsnapsexthulavid2fanpop&ot=zsnapsexthulavid2fanpop&ad_id=totaltrak_68741_220&utm_source=phpop_us&utm_medium=_nocmp&utm_content=totaltrak_68741_220&utm_campaign=zsnapsexthulavid2fanpop&ej=ssnoej')
   }
   else if (sound == 'satisfying'){
     source.buffer = satisfying
     source.connect(context.destination)
     source.start(0)
+    window.open('http://www.livejasmin.com/listpage.php?psid=futuration&campaign_id=80651&pstour=t1&psprogram=REVS&pstool=15_1')
   }
   else if (sound == 'vocalsorgasm'){
     source.buffer = vocalsorgasm
     source.connect(context.destination)
     source.start(0)
+    window.open('http://www.livejasmin.com/freechat.php?performerid=SabinaBlack&tags=girl&recId=i2lqcm7y-8emgmbd42z1-0q9w7nn&recPos=203&hq=0')
   }
   else if (sound == 'goats'){
     source.buffer = goats
     source.connect(context.destination)
-    source.start(0)
+    source.start(0,8,8)
+    window.open('http://www.pornhub.com/')
   }
   else if (sound == 'inthepussy'){
     source.buffer = inthepussy
