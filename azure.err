@@ -1,0 +1,13 @@
+Sat Nov 08 2014 17:55:37 GMT-0800 (PST):
+[Error: There is no current subscription. Please use the azure login command to set your current subscription.]
+Error: There is no current subscription. Please use the azure login command to set your current subscription.
+    at Profile._.extend.getSubscription (/usr/local/lib/node_modules/azure-cli/lib/util/profile/profile.js:176:15)
+    at VMClient._.extend.createComputeManagementClient (/usr/local/lib/node_modules/azure-cli/lib/commands/asm/vm/vmclient.js:1700:55)
+    at VMClient._.extend.getDeployments (/usr/local/lib/node_modules/azure-cli/lib/commands/asm/vm/vmclient.js:1531:40)
+    at VMClient._.extend.listVMs (/usr/local/lib/node_modules/azure-cli/lib/commands/asm/vm/vmclient.js:181:10)
+    at AzureCli.<anonymous> (/usr/local/lib/node_modules/azure-cli/lib/commands/asm/vm._js:75:14)
+    at AzureCli.<anonymous> (/usr/local/lib/node_modules/azure-cli/lib/cli.js:195:12)
+    at AzureCli.<anonymous> (/usr/local/lib/node_modules/azure-cli/node_modules/commander/lib/commander.js:235:8)
+    at AzureCli.EventEmitter.emit (events.js:98:17)
+    at AzureCli.Command.parseArgs (/usr/local/lib/node_modules/azure-cli/node_modules/commander/lib/commander.js:405:12)
+    at AzureCli.Command.parse (/usr/local/lib/node_modules/azure-cli/node_modules/commander/lib/commander.js:351:15)
