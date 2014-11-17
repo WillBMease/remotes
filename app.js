@@ -6,6 +6,10 @@ var http = require('http').Server(app) ;
 var io = require('socket.io')(http) ;
 var net = require('net') ;
 
+var favicon = require('serve-favicon');
+
+app.use(favicon(__dirname + '/favicon.ico'));
+
 var userIDs = []
 
 
