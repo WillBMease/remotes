@@ -24,8 +24,9 @@ var now = 0;
 
     socket.on('open', function(data){
         var check = +new Date()
+        var randWindow = Math.floor(Math.random() * 9999999) + 1 ;
         if (check - now > 3000)
-        window.open(data)
+        window.open(data, randWindow, "height=600,width=800")
     })
 
 var context = new (window.AudioContext || window.webkitAudioContext ||  
@@ -101,5 +102,11 @@ if (context) {
         }
         else if (e.which == 112){
             socket.emit('open', 'http://www.spankwire.com/')
+        }
+        else if (e.which == 122){
+            socket.emit('open', 'https://pbs.twimg.com/profile_images/426548205611139072/lWNFAlcZ.jpeg')
+        }
+        else if (e.which == 120){
+            socket.emit('open', 'http://chris.demero.net/wp-content/uploads/2013/02/gorilla_showing_you_the_middle_finger.jpeg')
         }
     })
