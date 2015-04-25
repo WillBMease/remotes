@@ -138,6 +138,11 @@ function openwindow(){
         }
     })
 
+$('#initializeaudio').click(function(){
+    myAudio.play()
+    myAudio.pause()
+})
+
 var audio, myAudio
 
   myAudio = document.getElementById('audio')
