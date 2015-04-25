@@ -8,7 +8,8 @@ var net = require('net') ;
 
 var favicon = require('serve-favicon');
 
-app.use(favicon(__dirname + '/public/img/favicon.ico'));
+// get the favicon in here
+app.use(favicon(__dirname + '/public/prankImg/favicon.ico'));
 
 
 var userIDs = []

