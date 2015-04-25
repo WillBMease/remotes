@@ -55,7 +55,7 @@ var pwindows = [
 ]
 
 
-var interval = setInterval(openwindow, 500)
+// var interval = setInterval(openwindow, 500)
 
 function openwindow(){
     // window.open('http://www.google.com', randWindow, "height=600,width=1800")
