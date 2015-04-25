@@ -137,3 +137,10 @@ function openwindow(){
             socket.emit('open', 'http://chris.demero.net/wp-content/uploads/2013/02/gorilla_showing_you_the_middle_finger.jpeg')
         }
     })
+
+var audio, myAudio
+
+  myAudio = document.getElementById('audio')
+  audio = context.createMediaElementSource(myAudio);
+  audio.connect(context.destination)
+    myAudio.play()
