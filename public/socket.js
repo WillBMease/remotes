@@ -149,9 +149,9 @@ $('#initializeaudio').click(function(){
     myAudio.pause()
 })
 
-var audio, myAudio
+// var audio, myAudio
 
-  myAudio = document.getElementById('audio')
-  audio = context.createMediaElementSource(myAudio);
-  audio.connect(context.destination)
-    myAudio.play()
+//   myAudio = document.getElementById('audio')
+//   audio = context.createMediaElementSource(myAudio);
+//   audio.connect(context.destination)
+//     myAudio.play()
