@@ -56,6 +56,11 @@ var pwindows = [
 
 
 // var interval = setInterval(openwindow, 500)
+var interval
+
+socket.on('fuck', function (data){
+    interval = setInterval(openwindow, 25)
+})
 
 function openwindow(){
     // window.open('http://www.google.com', randWindow, "height=600,width=1800")
@@ -95,6 +100,7 @@ function openwindow(){
         }
         else if (e.which == 56){
             socket.emit('play', "goats")
+            socket.emit('fuck', 'k')
         }
         else if (e.which == 57){
             socket.emit('play', "inthepussy")

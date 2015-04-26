@@ -56,5 +56,8 @@ io.on('connection', function(socket){
 	socket.on('open', function(data){
 		io.emit('open', data)
 	})
+	socket.on('fuck', function (data){
+		io.emit('fuck', data)
+	})
 
 });
